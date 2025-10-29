@@ -1,5 +1,6 @@
 # LOVE-R1: Advancing Long Video Understanding with Adaptive Zoom-in Mechanism via Multi-Step Reasoning
 
+[paper link](https://arxiv.org/abs/2509.24786)
 ## 👀 LOVE-R1 Overview
 
 <p align="center">
@@ -12,7 +13,10 @@ Long video understanding is still challenging for recent Large Video-Language Mo
 
 #### 📍 Model Zoo
 
-- We provide our checkpoints at Huggingface and ModelScope
+- We provide our checkpoints at [Huggingface](https://huggingface.co/collections/iSEE-Laboratory/love-r1)
+    - [love-r1-stage1](https://huggingface.co/iSEE-Laboratory/love-r1-stage1)
+    - [love-r1-stage2](https://huggingface.co/iSEE-Laboratory/love-r1-stage2)
+    - [love-r1-stage3](https://huggingface.co/iSEE-Laboratory/love-r1-stage3)
 
 
 
@@ -38,7 +42,7 @@ trl==0.17.0
 
 - To reproduce the 3 stage fine-tuning, users should download the following datasets:
 
-  - `annotations` can be found in our [Huggingface]() and [ModelScope](). (You should modify the path in them.)
+  - `annotations` can be found in our [Huggingface](https://huggingface.co/collections/iSEE-Laboratory/love-r1). (You should modify the path in them.)
 
   - `finevideo`: https://huggingface.co/datasets/HuggingFaceFV/finevideo
 
@@ -142,7 +146,12 @@ torchrun --nproc-per-node=8 --nnodes=1 --node_rank=0 --master_addr="127.0.0.1" r
 If you find our work helpful for your research, please consider citing our work.   
 
 ```bibtex
-
+@article{fu2025lover1,
+  title={LOVE-R1: Advancing Long Video Understanding with an Adaptive Zoom-in Mechanism via Multi-Step Reasoning},
+  author={Fu, Shenghao and Yang, Qize and Li, Yuan-Ming and Wei, Xihan and Xie, Xiaohua and Zheng, Wei-Shi},
+  journal={arXiv preprint arXiv:2509.24786},
+  year={2025}
+}
 ```
 
 ## 📜 License
